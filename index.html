@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+
+    header.navbar {
+    background-color: #ff645a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.navbar h1 {
+    margin: 0;
+    align-items: center;
+}
+
+
+header.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar ul li {
+    margin-left: 20px;
+}
+
+header.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background: url('image-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about, .restaurants {
+    padding: 20px;
+    text-align: center;
+}
+
+footer.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.restaurants {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .restaurant-card {
+            background: white;
+            margin: 15px;
+            padding: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .restaurant-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .restaurant-card h3 {
+            margin: 10px 0;
+        }
+
+.restaurant p {
+    margin: 0;
+    color: #555;
+}
+
+.header-content {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header.navbar h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header.navbar .search-bar {
+    margin-top: 10px;
+    display: inline-block; /* Ensures proper centering with text-align */
+}
+
+header.navbar .search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+header.navbar .search-bar button {
+    padding: 8px 15px;
+    background-color: white;
+    color: #ff645a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header.navbar .search-bar button:hover {
+    background-color: #f1f1f1;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Zomato</h1>
+        <form class="search-bar" action="#" method="GET">
+            <input type="text" name="search" placeholder="Search restaurants...">
+            <button type="submit">Search</button>
+        </form>
+        <nav>
+            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Discover the best food & drinks</h2>
+        <p>Order your favorites or explore new cuisines.</p>
+    </section>
+
+    
+
+    <div class="restaurants">
+        
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/6223226/pexels-photo-6223226.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant A">
+                <h3>Restaurant A</h3>
+                <p>Delicious pizzas and pasta.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/8818732/pexels-photo-8818732.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant B">
+                <h3>Restaurant B</h3>
+                <p>Authentic Indian cuisine.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/28701091/pexels-photo-28701091/free-photo-of-exquisite-japanese-sushi-platter-with-fresh-seafood.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant C">
+                <h3>Restaurant C</h3>
+                <p>Fresh sushi and ramen.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/8353341/pexels-photo-8353341.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant D">
+                <h3>Restaurant D</h3>
+                <p>Classic burgers and milkshakes.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/25686074/pexels-photo-25686074/free-photo-of-traditional-mexican-dishes-served-in-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant E">
+                <h3>Restaurant E</h3>
+                <p>Spicy Mexican tacos and burritos.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/7656394/pexels-photo-7656394.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant F">
+                <h3>Restaurant F</h3>
+                <p>Healthy vegan salads and smoothies.</p>
+            </div>
+        
+
+
+        
+    </div>
+    
+
+    <footer class="footer">
+        <p>&copy; 2025 Zomato Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
