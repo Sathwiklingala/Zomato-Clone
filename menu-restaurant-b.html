@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Indian Cuisine - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff645a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ff645a;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .menu-item div {
+            flex: 1;
+        }
+
+        .menu-item button {
+            padding: 10px 15px;
+            background-color: #ff645a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #e5534c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Authentic Indian Cuisine</h1>
+        <p>Explore our mouth-watering dishes and order your favorites!</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- Starters -->
+        <div class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/3928854/pexels-photo-3928854.png?auto=compress&cs=tinysrgb&w=600" alt="Paneer Tikka">
+                <div>
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated and grilled cottage cheese cubes served with mint chutney.</p>
+                    <p>Price: ₹220</p>
+                </div>
+                <button onclick="orderItem('Paneer Tikka')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/20371522/pexels-photo-20371522/free-photo-of-meat-on-plate.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chicken Tandoori">
+                <div>
+                    <h3>Chicken Tandoori</h3>
+                    <p>Succulent chicken marinated in yogurt and spices, cooked in a tandoor.</p>
+                    <p>Price: ₹280</p>
+                </div>
+                <button onclick="orderItem('Chicken Tandoori')">Order</button>
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Butter Chicken">
+                <div>
+                    <h3>Butter Chicken</h3>
+                    <p>Creamy tomato-based chicken curry cooked with Indian spices.</p>
+                    <p>Price: ₹320</p>
+                </div>
+                <button onclick="orderItem('Butter Chicken')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/9609840/pexels-photo-9609840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hyderabadi Biryani">
+                <div>
+                    <h3>Hyderabadi Biryani</h3>
+                    <p>Aromatic basmati rice cooked with spices and a choice of meat or vegetables.</p>
+                    <p>Price: ₹280 (Veg), ₹320 (Chicken), ₹350 (Mutton)</p>
+                </div>
+                <button onclick="orderItem('Hyderabadi Biryani')">Order</button>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/11887844/pexels-photo-11887844.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gulab Jamun">
+                <div>
+                    <h3>Gulab Jamun</h3>
+                    <p>Soft milk-solid balls soaked in sugar syrup.</p>
+                    <p>Price: ₹90</p>
+                </div>
+                <button onclick="orderItem('Gulab Jamun')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/657067082/photo/rajwari-or-rajwadi-sweet-kesar-badam-pista-kulfi-or-ice-cream-candy.jpg?s=2048x2048&w=is&k=20&c=UVgEwIIOxJMCjq4RDz4DzaB-CHy5FO9h3dIWIEhUvCs=" alt="Kulfi">
+                <div>
+                    <h3>Kulfi</h3>
+                    <p>Traditional Indian ice cream in mango, pistachio, or malai flavors.</p>
+                    <p>Price: ₹80</p>
+                </div>
+                <button onclick="orderItem('Kulfi')">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Authentic Indian Cuisine. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function orderItem(item) {
+            alert(item + " has been added to your order!");
+        }
+    </script>
+</body>
+</html>

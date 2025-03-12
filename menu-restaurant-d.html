@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Burgers and Milkshakes - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff645a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ff645a;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .menu-item div {
+            flex: 1;
+        }
+
+        .menu-item button {
+            padding: 10px 15px;
+            background-color: #ff645a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #e5534c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Classic Burgers and Milkshakes</h1>
+        <p>Indulge in our juicy burgers and creamy milkshakes!</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- Burgers Section -->
+        <div class="menu-section">
+            <h2>Burgers</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Classic Cheeseburger">
+                <div>
+                    <h3>Classic Cheeseburger</h3>
+                    <p>Juicy beef patty with melted cheese, lettuce, tomato, and pickles.</p>
+                    <p>Price: ₹250</p>
+                </div>
+                <button onclick="orderItem('Classic Cheeseburger')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/11299741/pexels-photo-11299741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Grilled Chicken Burger">
+                <div>
+                    <h3>Grilled Chicken Burger</h3>
+                    <p>Seasoned grilled chicken breast with lettuce, tomato, and mayo.</p>
+                    <p>Price: ₹220</p>
+                </div>
+                <button onclick="orderItem('Grilled Chicken Burger')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/750073/pexels-photo-750073.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Veggie Burger">
+                <div>
+                    <h3>Veggie Burger</h3>
+                    <p>Healthy vegetable patty with lettuce, tomato, and vegan mayo.</p>
+                    <p>Price: ₹200</p>
+                </div>
+                <button onclick="orderItem('Veggie Burger')">Order</button>
+            </div>
+        </div>
+
+        <!-- Milkshakes Section -->
+        <div class="menu-section">
+            <h2>Milkshakes</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/28525199/pexels-photo-28525199/free-photo-of-delicious-chocolate-milkshake-with-oreo-topping.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolate Milkshake">
+                <div>
+                    <h3>Chocolate Milkshake</h3>
+                    <p>Rich and creamy chocolate shake topped with whipped cream.</p>
+                    <p>Price: ₹150</p>
+                </div>
+                <button onclick="orderItem('Chocolate Milkshake')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/2424832/pexels-photo-2424832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strawberry Milkshake">
+                <div>
+                    <h3>Strawberry Milkshake</h3>
+                    <p>Fresh strawberry shake made with real fruit and ice cream.</p>
+                    <p>Price: ₹150</p>
+                </div>
+                <button onclick="orderItem('Strawberry Milkshake')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/20205942/pexels-photo-20205942/free-photo-of-strawberry-milkshake.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vanilla Milkshake">
+                <div>
+                    <h3>Vanilla Milkshake</h3>
+                    <p>Classic vanilla shake with a hint of sweetness.</p>
+                    <p>Price: ₹140</p>
+                </div>
+                <button onclick="orderItem('Vanilla Milkshake')">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Classic Burgers and Milkshakes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function orderItem(item) {
+            alert(item + " has been added to your order!");
+        }
+    </script>
+</body>
+</html>

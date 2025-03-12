@@ -71,6 +71,7 @@ footer.footer {
             justify-content: center;
             flex-wrap: wrap;
             padding: 20px;
+            gap: 20px;
         }
         .restaurant-card {
             background: white;
@@ -92,6 +93,17 @@ footer.footer {
     margin: 0;
     color: #555;
 }
+.restaurant-card h3 a {
+    text-decoration: none; 
+    color: #ff645a; 
+    font-weight: bold;
+}
+
+.restaurant-card h3 a:hover {
+    text-decoration: underline; 
+    color: #e5534c; 
+}
+
 
 .header-content {
     text-align: center;
@@ -105,7 +117,7 @@ header.navbar h1 {
 
 header.navbar .search-bar {
     margin-top: 10px;
-    display: inline-block; /* Ensures proper centering with text-align */
+    display: inline-block; 
 }
 
 header.navbar .search-bar input {
@@ -128,6 +140,102 @@ header.navbar .search-bar button:hover {
     background-color: #f1f1f1;
 }
 
+.promo-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    height: 100vh; 
+}
+
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.promo-left img {
+    max-width: 250px; 
+    margin: 15px;
+}
+
+.promo-right h2 {
+    font-size: 2.5rem; 
+    color: #ff645a;
+    margin-bottom: 15px;
+}
+
+.promo-right p {
+    font-size: 1.5rem; 
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.download-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.download-form input {
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.download-form button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff645a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-form button:hover {
+    background-color: #e5534c;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.download-buttons a {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.google-play {
+    background-color: #34a853;
+}
+
+.app-store {
+    background-color: #0070c9;
+}
+
+.download-buttons a:hover {
+    opacity: 0.8; 
+}
+
+
+
 
     </style>
 </head>
@@ -141,10 +249,11 @@ header.navbar .search-bar button:hover {
         <nav>
             
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#restaurants">Restaurants</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign up</a></li>
             </ul>
         </nav>
         
@@ -161,43 +270,135 @@ header.navbar .search-bar button:hover {
         
             <div class="restaurant-card">
                 <img src="https://images.pexels.com/photos/6223226/pexels-photo-6223226.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant A">
-                <h3>Restaurant A</h3>
+                <h3><a href="menu-restaurant-a.html">Restaurant A</a></h3>
                 <p>Delicious pizzas and pasta.</p>
             </div>
             <div class="restaurant-card">
                 <img src="https://images.pexels.com/photos/8818732/pexels-photo-8818732.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant B">
-                <h3>Restaurant B</h3>
+                <h3><a href="menu-restaurant-b.html">Restaurant B</a></h3>
                 <p>Authentic Indian cuisine.</p>
             </div>
             <div class="restaurant-card">
                 <img src="https://images.pexels.com/photos/28701091/pexels-photo-28701091/free-photo-of-exquisite-japanese-sushi-platter-with-fresh-seafood.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant C">
-                <h3>Restaurant C</h3>
+                <h3><a href="menu-restaurant-c.html">Restaurant C</a></h3>
                 <p>Fresh sushi and ramen.</p>
             </div>
             <div class="restaurant-card">
                 <img src="https://images.pexels.com/photos/8353341/pexels-photo-8353341.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant D">
-                <h3>Restaurant D</h3>
+                <h3><a href="menu-restaurant-d.html">Restaurant D</a></h3>
                 <p>Classic burgers and milkshakes.</p>
             </div>
             <div class="restaurant-card">
                 <img src="https://images.pexels.com/photos/25686074/pexels-photo-25686074/free-photo-of-traditional-mexican-dishes-served-in-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant E">
-                <h3>Restaurant E</h3>
+                <h3><a href="menu-restaurant-e.html">Restaurant E</a></h3>
                 <p>Spicy Mexican tacos and burritos.</p>
             </div>
             <div class="restaurant-card">
-                <img src="https://images.pexels.com/photos/7656394/pexels-photo-7656394.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant F">
-                <h3>Restaurant F</h3>
+                <img src="https://images.pexels.com/photos/17612807/pexels-photo-17612807/free-photo-of-a-drink-with-berries-mint-and-lime.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant F">
+                <h3><a href="menu-restaurant-f.html">Restaurant F</a></h3>
                 <p>Healthy vegan salads and smoothies.</p>
-            </div>
-        
-
-
-        
+            </div>  
+            <div class="restaurant-card">
+                <img src="https://images.pexels.com/photos/20642812/pexels-photo-20642812/free-photo-of-rice-with-chicken.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant F">
+                <h3><a href="menu-restaurant-g.html">Restaurant G</a></h3>
+                <p>Spicy Chicken and Mutton Dum Biryanis.</p>
+            </div>  
+            
     </div>
-    
 
-    <footer class="footer">
-        <p>&copy; 2025 Zomato Clone. All rights reserved.</p>
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="promo-left">
+                <img src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png" alt="Zomato App on Phone 1">
+               
+            </div>
+            <div class="promo-right">
+                <h2>Get the Zomato App</h2>
+                <p>Send a link to download the app via email or phone.</p>
+                <form action="#" method="POST" class="download-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Share App Link</button>
+                </form>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store" target="_blank" class="google-play">Download on Google Play</a>
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="app-store">Download on the App Store</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <footer style="background-color: #333; color: white; padding: 20px 0; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: auto; padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+            <!-- About Zomato Section -->
+            <div>
+                <h3 style="color: #ff645a;">About Zomato</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Who We Are</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Work With Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Investor Relations</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Report Fraud</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Press Kit</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Zomaverse Section -->
+            <div>
+                <h3 style="color: #ff645a;">Zomaverse</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Zomato</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Blinkit</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Feeding India</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Hyperpure</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Zomaland</a></li>
+                </ul>
+            </div>
+    
+            <!-- For Restaurants Section -->
+            <div>
+                <h3 style="color: #ff645a;">For Restaurants</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Partner With Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Apps For You</a></li>
+                </ul>
+            </div>
+    
+            <!-- Learn More Section -->
+            <div>
+                <h3 style="color: #ff645a;">Learn More</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Privacy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Security</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Terms</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Links Section -->
+            <div>
+                <h3 style="color: #ff645a;">Follow Us</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 10px;">
+                    <li><a href="#" style="color: white; text-decoration: none;">LinkedIn</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Instagram</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">YouTube</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Twitter</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Facebook</a></li>
+                </ul>
+            </div>
+    
+            <!-- App Download Section -->
+            <div>
+                <h3 style="color: #ff645a;">Download App</h3>
+                <a href="#" style="color: white; text-decoration: none; display: block; margin-bottom: 10px;">Get it on Google Play</a>
+                <a href="#" style="color: white; text-decoration: none;">Download on the App Store</a>
+            </div>
+        </div>
+    
+        <div style="border-top: 1px solid #555; padding: 10px 20px; text-align: center; margin-top: 20px;">
+            <p style="color: #aaa; font-size: 0.8rem;">2008-2025 © Zomato™ Ltd. All rights reserved. Terms of Service | Privacy Policy</p>
+        </div>
     </footer>
+    
 </body>
 </html>

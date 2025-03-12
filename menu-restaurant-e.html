@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Tacos and Burritos - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff645a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ff645a;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .menu-item div {
+            flex: 1;
+        }
+
+        .menu-item button {
+            padding: 10px 15px;
+            background-color: #ff645a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #e5534c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mexican Tacos and Burritos</h1>
+        <p>Enjoy the best of Mexico with our spicy and flavorful dishes!</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- Tacos Section -->
+        <div class="menu-section">
+            <h2>Tacos</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/14179983/pexels-photo-14179983.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chicken Tacos">
+                <div>
+                    <h3>Chicken Tacos</h3>
+                    <p>Grilled chicken with pico de gallo, cheese, and spicy salsa.</p>
+                    <p>Price: ₹200</p>
+                </div>
+                <button onclick="orderItem('Chicken Tacos')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beef Tacos">
+                <div>
+                    <h3>Beef Tacos</h3>
+                    <p>Seasoned beef topped with lettuce, cheese, and sour cream.</p>
+                    <p>Price: ₹220</p>
+                </div>
+                <button onclick="orderItem('Beef Tacos')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/8448335/pexels-photo-8448335.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Veggie Tacos">
+                <div>
+                    <h3>Veggie Tacos</h3>
+                    <p>Loaded with grilled vegetables, black beans, and guacamole.</p>
+                    <p>Price: ₹180</p>
+                </div>
+                <button onclick="orderItem('Veggie Tacos')">Order</button>
+            </div>
+        </div>
+
+        <!-- Burritos Section -->
+        <div class="menu-section">
+            <h2>Burritos</h2>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/15010305/pexels-photo-15010305/free-photo-of-close-up-photo-of-a-burrito.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chicken Burrito">
+                <div>
+                    <h3>Chicken Burrito</h3>
+                    <p>Stuffed with chicken, rice, beans, cheese, and salsa.</p>
+                    <p>Price: ₹250</p>
+                </div>
+                <button onclick="orderItem('Chicken Burrito')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/27411776/pexels-photo-27411776/free-photo-of-burrito.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beef Burrito">
+                <div>
+                    <h3>Beef Burrito</h3>
+                    <p>Filled with seasoned beef, rice, beans, and spicy cheese sauce.</p>
+                    <p>Price: ₹270</p>
+                </div>
+                <button onclick="orderItem('Beef Burrito')">Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/12737663/pexels-photo-12737663.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Veggie Burrito">
+                <div>
+                    <h3>Veggie Burrito</h3>
+                    <p>Loaded with fresh veggies, black beans, and guacamole.</p>
+                    <p>Price: ₹220</p>
+                </div>
+                <button onclick="orderItem('Veggie Burrito')">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mexican Tacos and Burritos. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function orderItem(item) {
+            alert(item + " has been added to your order!");
+        }
+    </script>
+</body>
+</html>

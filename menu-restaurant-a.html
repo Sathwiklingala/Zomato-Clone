@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant A Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .menu-item button {
+            padding: 5px 10px;
+            background-color: #ff645a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .menu-item button:hover {
+            background-color: #e5534c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant A Menu</h1>
+    <div class="menu-item">
+        <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pizza">
+        <span>Pizza - $10</span>
+        <button onclick="orderItem('Pizza')">Order</button>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pasta">
+        <span>Pasta - $8</span>
+        <button onclick="orderItem('Pasta')">Order</button>
+    </div>
+
+    <script>
+        function orderItem(item) {
+            alert(item + " added to your order!");
+        }
+    </script>
+</body>
+</html>
